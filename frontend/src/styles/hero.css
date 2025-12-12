@@ -1,0 +1,68 @@
+/* HERO*/
+
+.hero {
+  width: 100%;
+  padding: 70px 20px;
+  background: linear-gradient(130deg, var(--primary-light), var(--primary-dark));
+  color: white;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* cards */
+.hero-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
+.hero-box {
+  background: var(--bg-card);
+  width: 260px;
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.hero-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.hero-icon {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+/* imagem */
+.hero-image {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}

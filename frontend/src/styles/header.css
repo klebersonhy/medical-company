@@ -1,0 +1,44 @@
+/* ============================================
+HEADER MODERNO
+================================================ */
+
+header {
+  width: 100%;
+  background: var(--bg-card);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.navbar a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.navbar a:hover {
+  color: var(--primary-dark);
+}

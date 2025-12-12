@@ -1,0 +1,352 @@
+/* src/styles/about.css */
+
+/* Página Sobre */
+.about-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Cabeçalho */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* Layout principal */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Seções */
+.mission-section,
+.history-section,
+.team-section {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  border: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.mission-section h2,
+.history-section h2,
+.team-section h2 {
+  font-size: 1.75rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border);
+  font-weight: 600;
+}
+
+.mission-section p {
+  font-size: 1.125rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Valores */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  border: var(--border);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.125rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.value-card p {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Timeline */
+.history-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.history-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.timeline-year {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  background: var(--bg-soft);
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* Equipe */
+.team-description {
+  font-size: 1.125rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.team-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.team-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+/* Sidebar */
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.certification-card {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border: none;
+}
+
+.certification-card .card-title {
+  color: white;
+}
+
+.certification-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.certification-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+}
+
+.certification-list li:last-child {
+  border-bottom: none;
+}
+
+.numbers-card .card-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.number-item {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-soft);
+  border-radius: 8px;
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.number-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.3;
+}
+
+.location-card {
+  text-align: center;
+}
+
+.location-card .card-subtitle {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.card-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+.card-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .numbers-grid,
+  .team-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .history-timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-item {
+    padding-left: 1rem;
+  }
+}

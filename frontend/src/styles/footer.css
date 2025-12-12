@@ -1,0 +1,15 @@
+footer { 
+  padding:22px 0; 
+  text-align:center; 
+  background: #f5f8fb; 
+  color:var(--blue-dark); 
+  font-weight:600; box-shadow:0 -3px 10px rgba(0,0,0,0.03); 
+  margin-top:40px; 
+}
+
+footer small { 
+  display:block; 
+  margin-top:6px; 
+  font-weight:400; 
+  color:#666; 
+}

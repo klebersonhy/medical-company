@@ -1,0 +1,118 @@
+/* TEMA GLOBAL - CORES COMENTADAS */
+
+:root {
+  /* CORES PRINCIPAIS DA MARCA (azul/verde água) */
+  --primary: #007f8f;           /* Cor principal da clínica - azul água médio */
+  --primary-light: #00b7c7;     /* Versão mais clara para hover/efeitos */
+  --primary-dark: #004a54;      /* Versão mais escura para textos importantes */
+
+  /* CORES SECUNDÁRIAS/COMPLEMENTARES */
+  --secondary: #2a9d8f;         /* Cor secundária - verde água */
+  --accent: #e76f51;            /* Cor de destaque - laranja coral para CTAs */
+
+  /* CORES DE FUNDO */
+  --bg-soft: #f0f9fa;           /* Fundo suave da página - azul água muito claro */
+  --bg-card: #ffffff;           /* Fundo de cards/seções - branco puro */
+
+  /* CORES DE TEXTO - HIERARQUIA DE CONTRASTE */
+  --text-dark: #001f24;         /* Textos mais importantes (títulos) - quase preto azulado */
+  --text-medium: #00363d;       /* Textos secundários (parágrafos) - azul escuro */
+  --text-light: #2d5d64;        /* Textos menos importantes - azul acinzentado */
+
+  /* CORES NEUTRAS/CINZAS */
+  --gray-100: #f8f9fa;          /* Cinza muito claro para fundos alternativos */
+  --gray-200: #e9ecef;          /* Cinza claro para bordas/divisórias */
+  --gray-300: #dee2e6;          /* Cinza médio para elementos inativos */
+
+  /* SOMBRAS */
+  --shadow: 0 4px 14px rgba(0, 127, 143, 0.1);   /* Sombra padrão - com tom azul */
+  --shadow-hover: 0 8px 25px rgba(0, 127, 143, 0.2); /* Sombra hover - mais intensa */
+
+  /* BORDAS */
+  --border: 1px solid #d0e8ec;  /* Cor padrão de bordas - azul muito claro */
+  --radius: 14px;               /* Raio padrão de cantos arredondados */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* FUNDO DO BODY */
+body {
+  background: var(--bg-soft);   /* Usando o azul água muito claro como fundo */
+  color: var(--text-dark);      /* Cor padrão do texto - quase preto azulado */
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* LINKS - CORES */
+a {
+  text-decoration: none;
+  color: var(--primary-dark);   /* Links em azul escuro para boa visibilidade */
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--primary);        /* Ao passar mouse, muda para azul principal */
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* TÍTULOS */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);      /* Títulos na cor mais escura para máximo contraste */
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* PARÁGRAFOS */
+p {
+  color: var(--text-medium);    /* Parágrafos na cor média - boa leitura */
+  line-height: 1.7;
+}
+
+/* BOTÕES - EXEMPLOS DE USO */
+.btn-primary {
+  background: var(--primary);   /* Fundo azul água médio */
+  color: white;                 /* Texto branco para contraste */
+  border: none;
+}
+
+.btn-secondary {
+  background: white;            /* Fundo branco */
+  color: var(--primary-dark);   /* Texto azul escuro */
+  border: 2px solid var(--primary); /* Borda azul principal */
+}
+
+/* CARDS */
+.card {
+  background: var(--bg-card);   /* Fundo branco puro */
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);    /* Sombra azul suave */
+  border: var(--border);        /* Borda azul muito claro */
+}
+
+/* UTILITÁRIOS DE COR - PARA USO RÁPIDO */
+.text-primary { color: var(--primary-dark) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-accent { color: var(--accent) !important; }
+
+.bg-primary { background: var(--primary) !important; }
+.bg-soft { background: var(--bg-soft) !important; }
+.bg-gray { background: var(--gray-100) !important; }
